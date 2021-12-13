@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /** fundo**/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c4c4c4;
+}
+
+.content {
+  /** tabela cinza**/
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  width: 960px;
+  height: 60%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(130.63deg, #a6bf4b -50.96%, #668c4a 100%);
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 60%;
+}
+
+.first-content {
+  /** tabela cinza**/
+  display: flex;
+}
+
+.first-column {
+  /**lado do bem-vindo**/
+  text-align: center;
+  width: 60%;
+  z-index: 10;
+}
+
+.second-column {
+  /**lado do login**/
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: capitalize;
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.second-title {
+  font-family: "Righteous", cursive;
+  font-size: 50px;
+  line-height: 70px;
+  color: #a6bf4b;
+}
+
+.subtitle {
+  font-family: "Righteous", cursive;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.title-login {
+  font-family: "Righteous", cursive;
+  position: relative;
+  font-size: 40px;
+}
+
+.opcoes-login {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 39px;
+  line-height: 60px;
+}
+
+.loginTeacher {
+  background-color: #c4c4c4;
+  color: #848b92;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+  top: -50px;
+  align-items: center;
+}
+
+.fas {
+  color: black;
+}
+
+.loginAluno {
+  background-color: #c4c4c4;
+  color: #848b92;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+}
+
+.teste {
+  width: 30%;
+  position: absolute;
+  top: 10px;
+  left: 700px;
+}

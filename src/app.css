@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #848b92;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.59);
+}
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #e9e9e9;
+  display: flex;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(130.63deg, #a6bf4b -100.96%, #668c4a 100%);
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login .loginContainer label {
+  color: black;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: #c4c4c4;
+  letter-spacing: 1px;
+  box-shadow: 0px 10px 20px rgb(0, 0, 0 /20%);
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: brown;
+}
+
+.login .loginContainer .errorMsg {
+  color: brown;
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #c4c4c4;
+}
+
+.hero nav {
+  background: #a6bf4b;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #c4c4c4;
+}
+
+.cadastro {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+}
+.btnVoltar{
+  text-decoration: none;
+    color: black;
+    left: 39%;
+    top: 25%;
+    position: absolute;
+}
+.Professor,
+.Aluno {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+
+/* códigos abaixo pentense a sidebar */
+
+.sidenav {
+  width: 240px;
+  background: #a6bf4b;
+  position: absolute;
+  height: 91vh;
+  padding: 0;
+  left: -100%;
+  transition: all 0.3s;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.59);
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenavList {
+  padding: 0;
+}
+
+.Link {
+  width: 100%;
+  height: 60px;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sidenavList li:hover {
+  background-color: #668c4a;
+}
+
+ul li svg {
+  margin-right: 10px;
+}
+
+.sidenavList .sidenavLi {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.hamburguer {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.MainHero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: yellow;
+}
