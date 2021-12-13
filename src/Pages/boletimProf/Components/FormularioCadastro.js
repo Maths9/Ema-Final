@@ -45,9 +45,9 @@ const FormularioCadastro = (props) =>{
 
     return (
         <form autoComplete="off" onSubmit={manipuladorFormEnvio}>
-            <div className="form-group input-group col-md-10">
-                <div className="input-grou-prepen">
-                    <div className="input-group-text">
+            <div className="">
+                <div className="">
+                    <div className="">
                     
                     </div>
                 </div>

@@ -16,8 +16,6 @@ body {
   }
 }
 
-
-
 .App-link {
   color: #61dafb;
 }
@@ -43,16 +41,13 @@ body {
 .btn{
 cursor: pointer;
 }
-.titulo-subtitulo{
-  position: relative;
-  top: 0px;
-}
+
 .form-control{
   font-size: x-large;
 }
 .containerHeader {
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 40%;
   color: black;
   font-size: larger;

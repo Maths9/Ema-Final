@@ -1,15 +1,18 @@
 import React from 'react'
+import firebase from 'firebase'
 import { auth } from '../firebase.js'
 import { Button } from '@material-ui/core'
 
-function SignOut() {
+function SignIn() {
+    function signInWithGoogle() {
+        const provider = new firebase.auth.GoogleAuthProvider()
+        auth.signInWithPopup(provider)
+    }
     return (
-        <div class="header" style={{
-            display: 'flex', justifyContent: 'flex-end', position: 'fixed', width: '100%', top: 0, zIndex: '10'
-        }}>
-            <Button style={{ padding: '20px', fontSize: '20px', borderRadius: '0', fontWeight: '600' }} onClick={() => auth.signOut()}>SAIR</Button>
-        </div>
+            <Button style={{ padding: '20px', width: '100%',fontSize: '20px', borderRadius: '0', fontWeight: '650px'  }} onClick={signInWithGoogle}>Entrar Com  Google</Button>
+       
     )
 }
 
-export default SignOut
+export default SignIn
+

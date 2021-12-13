@@ -59,12 +59,13 @@ cursor: pointer;
   font-size: larger;
 }
 .adicionarNotas{
-  right: 30%;
-  top: 10%;
-  position: absolute;
+  right: 60%;
+  top: 50%;
+  
 }
 .tabelaNotas{
   left: 33%;
+  top: 70%;
   position: absolute;
   color:black;
   flex-flow: row wrap
