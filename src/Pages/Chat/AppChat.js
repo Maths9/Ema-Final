@@ -2,7 +2,7 @@ import './App.css';
 import Chat from './components/Chat';
 import SignIn from './components/SignIn';
 import { auth } from './firebase.js'
-import { useAuthState } from 'firebase/firebase-auth'
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 function AppChat() {
   const [user] = useAuthState(auth)
