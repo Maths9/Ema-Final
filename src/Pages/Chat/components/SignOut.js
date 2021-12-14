@@ -9,7 +9,7 @@ function SignIn() {
         auth.signInWithPopup(provider)
     }
     return (
-            <Button style={{ padding: '20px', width: '100%',fontSize: '20px', borderRadius: '0', fontWeight: '650px'  }} onClick={signInWithGoogle}>Entrar Com  Google</Button>
+            <Button onClick={signInWithGoogle}>Entrar Com  Google</Button>
        
     )
 }

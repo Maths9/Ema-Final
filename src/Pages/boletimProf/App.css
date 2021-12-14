@@ -27,7 +27,7 @@ body {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(350deg);
   }
 }
 
@@ -41,36 +41,87 @@ body {
   background-color: rgb(74, 145, 112);
 }
 .btn{
+  border-radius: 5%;
 cursor: pointer;
+font-size: xx-large;
+
 }
 .titulo-subtitulo{
   position: relative;
   top: 0px;
 }
 .form-control{
+  border-radius: 20px;
   font-size: x-large;
+  padding-top: 30px;
+  padding-inline-end: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
-.containerHeader {
+
  
-  position: absolute;
-  top: 7%;
-  left: 40%;
+.containerHeader {
+border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  top: 0%;
+  left: 99%;
   color: black;
   font-size: larger;
+  height: 230px;
+  width: 853px;
 }
-.adicionarNotas{
-  right: 60%;
-  top: 50%;
+.containerNotas{
+  position: relative;
+  height: 470px;
+  font-size: xx-large;
+  width: 670px;
+  left: 40%;
+  top: 0px;
+
+}
+.nome{
+ 
+  padding-bottom: 50px;
+}
+.notaUm{
+  padding-inline: 40px;
+  padding-bottom: 50px;
+}
+.notaDois{
+  
+  padding-bottom: 50px;
+}
+.notaTres{
+  padding-inline: 40px;
+  padding-bottom: 50px;
+}
+.notaQuatro{
+  
+  padding-bottom: 50px;
+}
+.fas.fa-pencil-alt{
+ padding-right: 20px;
   
 }
+  
+
 .tabelaNotas{
-  left: 33%;
-  top: 70%;
-  position: absolute;
-  color:black;
-  flex-flow: row wrap
+  left: 40%;
+  position: fixed;
+  flex-flow: row wrap;
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  top: 40%;
   
 }
+
 .row{
   flex-flow: row wrap;
 }

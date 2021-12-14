@@ -63,61 +63,54 @@ const Cadastro = () => {
 
 
     return (
-        <div className="ContainerPrincipal">
-                <div className="containerHeader">
-                    <h1 className="titulo">NOTAS 2021</h1>
-                    <p className="subtitulo"> TURMA DE MATEMÁTICA</p>
-                </div>
-           
+        <><div className="containerHeader">
+            <div className="">
+                <h1 className="titulo">NOTAS 2021</h1>
+                <p className="subtitulo"> TURMA DE MATEMÁTICA</p>
+            </div>
 
-           
 
-                <div className="adiconarNotas">
-                    <FormularioCadastro {...({ addEedit, idAtual, dadosAlunos })} />
-                </div>
+        </div><div className="adicionarNotas">
+                <FormularioCadastro {...({ addEedit, idAtual, dadosAlunos })} />
+            </div><table className="tabelaNotas">
+                <thead className="row">
 
+                    <tr>
+
+                        <td class="nome">Nome</td>
+                        <td class="notaUm">NotaUm</td>
+                        <td class="notaDois">NotaDois</td>
+                        <td class="notaTres">NotaTres</td>
+                        <td class="notaQuatro">NotaQuatro</td>
+
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {Object.keys(dadosAlunos).map(id => {
+                        return <tr key={id}>
+                            <td> {dadosAlunos[id].Nome}</td>
+                            <td> {dadosAlunos[id].NotaUm}</td>
+                            <td> {dadosAlunos[id].NotaDois}</td>
+                            <td> {dadosAlunos[id].NotaTres}</td>
+                            <td> {dadosAlunos[id].NotaQuatro}</td>
+
+                            <td>
+                                <a className="btn btn-outline-success" onClick={() => { setIdAtual(id) } }>
+                                    <i className="fas fa-pencil-alt"></i>
+                                </a>
+
+                                <a className="btn btn-danger" onClick={() => deleteCadastro(id)}>
+                                    <i className="far fa-trash-alt"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                    })}
+                </tbody>
+            </table></>
                
-                    <table className="tabelaNotas">
-                        <thead className="row">
-                        
-                            <tr>
-                           
-                                <td>Nome</td>
-                                <td>NotaUm</td>
-                                <td>NotaDois</td>
-                                <td>NotaTres</td>
-                                <td>NotaQuatro</td>
-                              
-                                
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            {
-                                Object.keys(dadosAlunos).map(id => {
-                                    return <tr key={id}>
-                                        <td> {dadosAlunos[id].Nome}</td>
-                                        <td> {dadosAlunos[id].NotaUm}</td>
-                                        <td> {dadosAlunos[id].NotaDois}</td>
-                                        <td> {dadosAlunos[id].NotaTres}</td>
-                                        <td> {dadosAlunos[id].NotaQuatro}</td>
-
-                                        <td>
-                                            <a className="btn btn-outline-success" onClick={() => { setIdAtual(id) }}>
-                                                <i className="fas fa-pencil-alt"></i>
-                                            </a>
-
-                                            <a className="btn btn-danger" onClick={() => deleteCadastro(id)}>
-                                                <i className="far fa-trash-alt"></i>
-                                            </a>
-                                        </td>
-
-                                    </tr>
-                                })
-                            }
-                        </tbody>
-                    </table>
-                </div>
 
            
       

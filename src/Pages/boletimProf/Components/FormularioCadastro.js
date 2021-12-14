@@ -45,6 +45,7 @@ const FormularioCadastro = (props) =>{
 
     return (
         <form autoComplete="off" onSubmit={manipuladorFormEnvio}>
+        <div className="containerNotas">
             <div className="">
                 <div className="">
                     <div className="">
@@ -58,11 +59,10 @@ const FormularioCadastro = (props) =>{
             </div>
 
         
-            <div className="containerNotas">
                
                 <div className="">
-                    <div className="input-grou-prepen">
-                        <div className="input-group-text">
+                    <div className="">
+                        <div className="">
                         
                         </div>
                     </div>
@@ -72,19 +72,19 @@ const FormularioCadastro = (props) =>{
                 </div>
 
                 <div className="">
-                    <div className="input-grou-prepen">
-                        <div className="input-group-text">
+                    <div className="">
+                        <div className="">
                           
                         </div>
                     </div>
                     <input className="form-control" type="number" placeholder="Digite a NotaDois" name="NotaDois" value={values.NotaDois}
                     onChange={manipuladorOnChange}/>
                 </div>
-            </div>
+            
 
             <div className="">
-                    <div className="input-grou-prepen">
-                    <div className="input-group-text">
+                    <div className="">
+                    <div className="">
                         
                        
                     </div>
@@ -95,8 +95,8 @@ const FormularioCadastro = (props) =>{
             </div>
            
             <div className="">
-                    <div className="input-grou-prepen">
-                        <div className="input-group-text">
+                    <div className="">
+                        <div className="">
                        
                     </div>
                 </div>
@@ -104,10 +104,10 @@ const FormularioCadastro = (props) =>{
                 <input className="form-control" type="number" placeholder="Digite a NotaQuatro" name="NotaQuatro" value={values.NotaQuatro}
                 onChange={manipuladorOnChange}/>
             </div>
-
             <div className="btnCadastrar">
                 <input type="submit" value={props.idAtual == '' ? 'Cadastrar' : 'atualizar'} className="btn btn-secondary btn-block" />
             </div>
+</div>
         </form>
 
     )

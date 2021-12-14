@@ -24,7 +24,7 @@ function SendMessage({ scroll }) {
             <form onSubmit={sendMessage}>
                 <div className="sendMsg">
                     <Input style={{ width: '78%', fontSize: '15px', fontWeight: '550', marginLeft: '5px', marginBottom: '-3px' }} placeholder='Mensagem' type="text" value={msg} onChange={e => setMsg(e.target.value)} />
-                    <Button style={{ width: '18%', fontSize: '15px', fontWeight: '550', margin: '4px 5% -13px 5%', maxWidth: '200px'}} type="submit">Enviar</Button>
+                    <Button style={{ width: '18%', fontSize: '15px', fontWeight: '550', margin: '4px 5% -13px 5%', maxWidth: '200px'}} class="Enviar"type="submit">Enviar</Button>
                 </div>
             </form>
         </div>

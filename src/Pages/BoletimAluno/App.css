@@ -43,21 +43,39 @@ cursor: pointer;
 }
 
 .form-control{
+  border-radius: 20px;
   font-size: x-large;
+  padding-top: 30px;
+  padding-inline-end: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .containerHeader {
-  position: absolute;
-  top: 30%;
-  left: 40%;
+  position: relative;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  top: 0%;
+  left: 66%;
   color: black;
   font-size: larger;
-}
+  height: 230px;
+  width: 853px;
+  }
 
 .tabelaNotas{
-  left: 33%;
-  position: absolute;
-  color:black;
-  flex-flow: row wrap
+  left: 25%;
+  position: fixed;
+  flex-flow: row wrap;
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  top: 40%;
   
 }
 .row{

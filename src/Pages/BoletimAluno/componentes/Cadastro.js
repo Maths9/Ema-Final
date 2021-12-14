@@ -20,24 +20,24 @@ const Cadastro = () => {
 
     return (
         <div>
-            <div className="ContainerPrincipal">
-                <div className="containerHeader">
+            <div className="containerHeader">
+                <div className="">
                     <h1 className="titulo">NOTAS 2021</h1>
                     <p className="subtitulo"> TURMA DE MATEMÁTICA</p>
                 </div>
             </div>
 
             
-                
+           
                     <table className="tabelaNotas">
                         <thead className="row">
                         
                             <tr>
-                                <td>Nome</td>
-                                <td>NotaUm</td>
-                                <td>NotaDois</td>
-                                <td>NotaTres</td>
-                                <td>NotaQuatro</td>
+                            <td class="nome">Nome</td>
+                        <td class="notaUm">NotaUm</td>
+                        <td class="notaDois">NotaDois</td>
+                        <td class="notaTres">NotaTres</td>
+                        <td class="notaQuatro">NotaQuatro</td>
                                 
                                 
                             </tr>
