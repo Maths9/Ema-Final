@@ -9,7 +9,7 @@ function SignIn() {
         auth.signInWithPopup(provider)
     }
     return (
-            <Button onClick={signInWithGoogle}>Entrar Com  Google</Button>
+            <Button onClick={signInWithGoogle}>Trocar conta Google</Button>
        
     )
 }

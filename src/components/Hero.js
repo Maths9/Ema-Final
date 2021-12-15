@@ -5,7 +5,7 @@ import { BrowserRouter, BrowserRouter as Router, Route } from 'react-router-dom'
 import HomeAluno from '../Pages/HomeAluno';
 import AppChat from '../Pages/Chat/AppChat';
 import App from '../Pages/BoletimAluno/App';
-
+import AppAt from '../Pages/src/AppAt';
 const Hero = ({ handleLogout }) => {
 
     const [showNav, setShowNav] = useState(false)
@@ -25,6 +25,7 @@ const Hero = ({ handleLogout }) => {
                 <Route path="/HomeAluno" component={HomeAluno} />
                 <Route path="/AppChat" component={AppChat} />
                 <Route path="/App" component={App} />
+                <Route path="/AppAt" component={AppAt} />
                 </div>
             </Router>
         </section>

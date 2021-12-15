@@ -18,7 +18,7 @@ function Chat() {
                 {messages.map(({ id, text, photoURL, uid }) => (
                     <div>
                         <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
-                            <img src={photoURL} alt="" />
+                            <img class="msgChat"src={photoURL} alt="" />
                             <p>{text}</p>
                         </div>
                     </div>

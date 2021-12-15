@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineHome } from 'react-icons/ai'
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { HiOutlineDocumentDuplicate } from "react-icons/hi";
+import { AiFillSnippets } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const NavbarProf = ({ show }) => {
@@ -11,7 +12,7 @@ const NavbarProf = ({ show }) => {
 
                 <li className="sidenavLi">
 
-                    <Link to="/HomeAluno" className="active Link">
+                    <Link to="/HomeProf" className="active Link">
                         <AiOutlineHome />Home
                     </Link>
                 </li>
@@ -25,6 +26,12 @@ const NavbarProf = ({ show }) => {
                 <li className="sidenavLi">
                     <Link to="/AppProf" className="active Link">
                         <HiOutlineDocumentDuplicate />Boletim
+                    </Link>
+                </li>
+
+                <li className="sidenavLi">
+                    <Link to="/AppAt" className="active Link">
+                        <AiFillSnippets />Atividades
                     </Link>
                 </li>
             </ul>

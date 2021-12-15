@@ -5,7 +5,7 @@ const HomeAluno = () =>{
          <div className="Home">
 
             <div>
-                <Link to="/App" className="active Link boletim">
+                <Link to="/AppProf" className="active Link boletim">
                     Boletim
                 </Link>
             </div>
@@ -14,13 +14,14 @@ const HomeAluno = () =>{
                 <Link to="/AppChat" className="active Link Chat">
                     Chat
                 </Link>
-            </div>
 
-            <div>
-                <Link to="/AppAt" className="active Link Chat">
+                <div>
+                <Link to="/AppAt" className="active Link atividades">
                     Atividades
                 </Link>
             </div>
+            </div>
+
         </div>
     )
 }

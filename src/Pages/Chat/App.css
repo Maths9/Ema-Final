@@ -6,7 +6,7 @@
 body {
   background: #c4c4c4;
 }
-img {
+img.msgChat {
   border-radius: 50%;
   height: 45px;
   margin-top: -20px;
