@@ -87,13 +87,16 @@ p {
   flex-direction: column;
 
 }
-.MuiButtonBase-root.MuiButton-root.MuiButton-text{
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-}
 
+.btnGoogle{
+ 
+  height: 8%;
+  top: 78px;
+  width: 250px;
+  left: 88%;
+  position: fixed;
+
+}
 .MuiButton-label {
  
   display: inherit;
